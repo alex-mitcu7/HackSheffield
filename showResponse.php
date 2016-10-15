@@ -20,9 +20,35 @@
 
   echo '<audio src="' . $voice['response'] . '" autoplay="autoplay"></audio>';
 
-  // Alternatively, print the content as well
-  echo $string;
 
   session_destroy();
 
  ?>
+
+ <!DOCTYPE html>
+ <html >
+   <head>
+     <meta charset="UTF-8">
+     <title>Glowing Pulse Form</title>
+     <link rel="stylesheet" href="./css/normalize.css">
+     <link rel="stylesheet" href="./css/style.css">
+     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   </head>
+
+   <body>
+     <section class="webdesigntuts-workshop">
+       <div id = "responseDIV">
+         <h2><?php echo $string; ?></h2>
+         <form action="receiveQuestion.php" method="post">
+  		       <input type="search" placeholder="What are you looking for?"
+                    name="question-bar">
+             <button type="submit" value="Ask me again?">Ask me again?</button>
+
+  	     </form>
+
+       </div>
+
+     </section>
+
+ </body>
+ </html>

@@ -1,11 +1,23 @@
-<!DOCTYPE HTML>
-<html>
-<body>
 
-<form action="receiveQuestion.php" method="post">
-Question: <input type="text" name="question-bar"><br>
-<input type="submit">
-</form>
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Glowing Pulse Form</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  </head>
+
+  <body>
+
+    <section class="webdesigntuts-workshop">
+	     <form action="receiveQuestion.php" method="post">
+		       <input type="search" placeholder="What are you looking for?"
+                  name="question-bar">
+		         <button type="submit" value="Ask">Ask</button>
+	     </form>
+    </section>
 
 </body>
 </html>

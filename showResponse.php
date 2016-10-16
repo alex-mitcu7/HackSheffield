@@ -4,8 +4,8 @@
   // Print the response
 
 
-  //$string = $_SESSION['answer'];
-  $string = "This is just a test.";
+  $string = $_SESSION['answer'];
+  //string = "This is just a test.";
 
   $vocal = new VoiceRSS;
   $voice = $vocal->speech([
@@ -77,10 +77,8 @@
          <br>
 
        </div>
-       <audio id="sound" src="<?php echo $voice['response']; ?>" preload="auto"></audio>
-       <button id ="volume" onclick="document.getElementById('sound').play();">
-         Play it
-       </button>
+       <audio autoplay id="sound" src="<?php echo $voice['response']; ?>" ></audio>
+
 
      </section>
 
